@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - GreenLeaf</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('backgroudd.jpeg'); /* Use your uploaded image name */
+      background-size:contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+    .signup-container {
+      width: 350px;
+      margin: 100px auto;
+      padding: 30px;
+      background: rgba(188, 7, 243, 0); /* Slightly transparent white */
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      margin-top: 30px ;
+    }
+    h2 {
+      text-align: center;
+      color: #08e913;
+      padding: 30px;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding-bottom: 12px;
+      margin: 10px 0;
+      border: 1px solid #cccccc3a;
+      border-radius: 6px;
+      background-color: transparent;
+      color: #ebe70f;
+    
+    
+    
+
+    }
+
+    label {
+      font-weight: bold;
+      color: #62ec05;
+    }
+    .checkbox-label {
+      font-weight: normal;
+      font-size: 0.9em;
+    }
+    button {
+      width: 100%;
+      background: #e6060656;
+      color: rgba(255, 255, 255, 0.349);
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      border-color: red;
+    }
+    button:hover {
+      background: #34f105;
+    }
+    .legal {
+      font-size: 0.85em;
+      color: #42e90f;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="signup-container">
+  <h2>MOSORIOT WEED CORNER</h2>
+  <form action="register.php" method="POST">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <label class="checkbox-label">
+      <input type="checkbox" name="age_confirm" required> I confirm I am 18 years or older
+    </label>
+
+    <button type="submit">Sign Up</button>
+
+    <p class="legal">By signing up, you agree to our Terms & Privacy Policy.</p>
+  </form>
+</div>
+
+</body>
+</html>
